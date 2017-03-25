@@ -88,6 +88,8 @@ GEM
     slop (3.6.0)
     thread_safe (0.3.6)
     tilt (2.0.7)
+    time_difference (0.5.0)
+      activesupport
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
     xpath (2.0.0)
@@ -111,6 +113,7 @@ DEPENDENCIES
   shoulda-matchers
   sinatra (~> 1.0)
   sinatra-contrib
+  time_difference
 
 BUNDLED WITH
    1.14.5
