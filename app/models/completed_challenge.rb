@@ -3,9 +3,10 @@ class CompletedChallenge < ActiveRecord::Base
   belongs_to :challenge 
 
   def work_time
-    starttime = self.clone_time
-    endtime = self.pull_time
+    start_time = self.clone_time
+    end_time = self.pull_time
 
+    TimeDifference.between(start_time, end_time).humanize
   end 
 
 end

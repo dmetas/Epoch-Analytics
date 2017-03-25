@@ -1,6 +1,6 @@
 class CreateCompletedChallenges < ActiveRecord::Migration
   def change
-    create_table :CompletedChallenges do |t|
+    create_table :completed_challenges do |t|
       t.string :gh_username
       t.datetime :clone_time
       t.datetime :pull_time
