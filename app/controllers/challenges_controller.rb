@@ -3,6 +3,10 @@ get '/challenges' do
   erb :'challenges/index' #show all challenges
 end
 
+get '/challenges/new' do
+  erb :'challenges/new' #show new challenges view
+end
+
 get '/challenges/:id' do
   #gets params from url
   @challenge = Challenge.find(params[:id]) #define instance variable for view
