@@ -22,6 +22,7 @@ post '/challenges' do
 
   response = http.request(request)
   challenges = response.read_body
+end
 
 get '/challenges/new' do
   erb :'challenges/new' #show new challenges view
