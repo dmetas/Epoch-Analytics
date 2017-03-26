@@ -1,6 +1,10 @@
+<h1>Challenges</h1>
+
 <ul>
   <% @challenges.each do |challenge| %>
     <li><a href="challenges/<%=challenge.id%>"><%= challenge.name %></a></li>
   <% end %>
 
 </ul>
+
+<%= erb :'challenges/_new', layout: false %>
