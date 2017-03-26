@@ -27,5 +27,5 @@ class Challenge < ActiveRecord::Base
 
   def pull_url
   	url = self.url
-  	pull_url = url[0..7] + "api." + url[8..18] + "repos/" + url[19..-1] + "/forks" + "/pulls"
+  	pull_url = url[0..7] + "api." + url[8..18] + "repos/" + url[19..-1] + "/pulls"
 end
