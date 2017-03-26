@@ -11,6 +11,7 @@ require 'rubygems'
 require 'uri'
 require 'pathname'
 require 'time_difference'
+require 'httparty'
 require 'dotenv'
 Dotenv.load
 
