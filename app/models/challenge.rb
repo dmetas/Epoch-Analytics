@@ -1,5 +1,5 @@
 class Challenge < ActiveRecord::Base
-	
+
   has_many :completed_challenges
   validates :name, presence: :true
 
@@ -20,5 +20,12 @@ class Challenge < ActiveRecord::Base
   	end
   end
 
+  def fork_url
+  	url = self.url
+  	fork_url = url[0..7] + "api." + url[8..18] + "repos/" + url[19..-1] + "/forks"
+  end
 
+  def pull_url
+  	url = self.url
+  	pull_url = url[0..7] + "api." + url[8..18] + "repos/" + url[19..-1] + "/pulls"
 end
