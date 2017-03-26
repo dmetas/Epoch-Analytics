@@ -11,6 +11,8 @@ require 'rubygems'
 require 'uri'
 require 'pathname'
 require 'time_difference'
+require 'dotenv'
+Dotenv.load
 
 require 'pg'
 require 'active_record'
