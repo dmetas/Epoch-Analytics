@@ -6,6 +6,11 @@
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
   -->
+   <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
+  
+          
   <link rel="stylesheet" href="/css/normalize.css">
   <!--
     application.css is where you put your styles
@@ -13,11 +18,29 @@
   <link rel="stylesheet" href="/css/application.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
   <script src="/js/application.js"></script>
 
   <title></title>
 </head>
 <body>
+<h1 class="card-panel white-text" style ="background-color:#73C2BE">Welcome to Epoch Analytics</h1>
   <%= yield %>
 </body>
+ <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Team Kaiju</h5>
+                <p class="white-text">Brianna, Dae, Dylan, Elaine, Mothra, Ravi  </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container white-text">
+            © 2017 Copyright
+            </div>
+          </div>
+        </footer>
 </html>

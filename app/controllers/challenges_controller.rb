@@ -3,6 +3,7 @@ get '/challenges' do
   erb :'challenges/index' #show all challenges
 end
 
+
 post '/challenges' do
   @challenge = Challenge.new(url: params[:url])
   require 'uri'
@@ -21,6 +22,9 @@ post '/challenges' do
 
   response = http.request(request)
   challenges = response.read_body
+
+get '/challenges/new' do
+  erb :'challenges/new' #show new challenges view
 end
 
 get '/challenges/:id' do
