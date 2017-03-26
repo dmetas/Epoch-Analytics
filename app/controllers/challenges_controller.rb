@@ -8,6 +8,7 @@ post '/challenges' do
   @challenge = Challenge.new(url: params[:url])
   require 'uri'
   require 'net/http'
+  require 'json'
 
   url = URI("https://api.github.com/repos/sf-fireflies-2017/cheering-mascot-sinatra-1-synchronous-forms-challenge/forks")
 
@@ -22,6 +23,7 @@ post '/challenges' do
 
   response = http.request(request)
   challenges = response.read_body
+  p JSON.parse(challenges)
 end
 
 get '/challenges/new' do
